@@ -1,0 +1,9 @@
+services:
+  proxysql:
+    image: proxysql/proxysql:2.7.1
+    volumes:
+      - "./proxysql.cnf:/etc/proxysql.cnf"
+    ports:
+      - "6032:6032"
+      - "6033:6033"
+      - "6070:6070"
